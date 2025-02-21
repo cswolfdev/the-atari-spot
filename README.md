@@ -1,34 +1,30 @@
-# Drupal CMS
+# The Atari Spot
 
-Drupal CMS is a fast-moving open source product that enables site builders to easily create new Drupal sites and extend them with smart defaults, all using their browser.
+A hobby site/photo gallery.
 
-## Getting started
 
-If you want to use [DDEV](https://ddev.com) to run Drupal CMS locally, follow these instructions:
+## Tech Stack
 
-1. Install DDEV following the [documentation](https://ddev.com/get-started/)
-2. Open the command line and `cd` to the root directory of this project
-3. Run the following commands:
-```shell
-ddev config --project-type=drupal11 --docroot=web
-ddev start
-ddev composer install
-ddev launch
+**Platform:** Drupal CMS
+
+
+## Installation
+
+Install with DDEV and Composer. Download DDEV for your local environment from https://ddev.com/get-started/.
+
+Make sure Git is installed on your local environment.
+
+Clone the project to a working directory of your choice on your local environment. Start DDEV in your working directory:
+
+```bash
+    ddev start
 ```
 
-Drupal CMS has the same system requirements as Drupal core, so you can use your preferred setup to run it locally. [See the Drupal User Guide for more information](https://www.drupal.org/docs/user_guide/en/installation-chapter.html) on how to set up Drupal.
+Once DDEV is up and running, install the project using Composer:
 
-### Installation options
-
-The Drupal CMS installer offers a list of features preconfigured with smart defaults. You will be able to customize whatever you choose, and add additional features, once you are logged in.
-
-After the installer is complete, you will land on the dashboard.
-
-## Documentation
-
-Coming soon ... [We're working on Drupal CMS specific documentation](https://www.drupal.org/project/drupal_cms/issues/3454527).
-
-In the meantime, learn more about managing a Drupal-based application in the [Drupal User Guide](https://www.drupal.org/docs/user_guide/en/index.html).
+```bash
+    ddev composer install
+```
 
 ## Contributing
 
